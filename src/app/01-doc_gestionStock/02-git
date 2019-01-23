@@ -1,0 +1,33 @@
+1- besoins ---------------------------------------------------------------------------
+  - Installer git.
+  - Nous avons 2 projets, clientGestionStock et serveurGestionStock, pour chaque projet, on avons
+    besoin de deux depot: a-un depot local, b-un depot distant sur github.
+2- Creation des depots locaux -------------------------------------------------------------
+   a- Se posionner sur le repertoire du projet clientGestionStock, click droit sur la souris, selectionner
+      Git Bash Here, ensuite tapez la commande :
+      clientGestionStock > git init
+   b- meme travail pour la partie serveur.
+2- Creer les depots distants :--------------------------------------------------------------------
+   - se connecter sur github, et cree les 2 depot distants :
+     a- clientGestionStock
+     b- serveurGestionStock
+3- Ajouter les 2 projets creer localement aux 2 depots distants-----------------------------------
+    - se positionner sur le projet clientGestionStock click droit sur la souris, lancer Git Bash Here
+      clientGestionStock > git remote add origin https://github.com/abdelMor/clientGestionStock.git
+      remarques :
+           a- on donne le nom par defaut au depot distant (origin)
+           b- on copy l'url du projet clientGestionStock dans github
+    - se positionner sur le projet serveurGestionStock click droit sur la souris, lancer Git Bash Here
+      clientGestionStock > git remote add origin https://github.com/abdelMor/serveurGestionStock.git
+      remarques :
+           a- on donne le nom par defaut au depos (origin)
+           b- on copy l'url du projet serveurGestionStock dans github
+4- envoie du code source aux 2 depots distants :--------------------------------------------
+    a- envoie du code source du projet clientGestionStock au depot distant:
+       a-1 se positionner sur le projet clientGestionStock click droit sur la souris, lancer Git Bash Here
+       a-2 clientGestionStock > git add . (ajouter tous les fichiers a commiter:les placer a working arriere)
+       a-3 clientGestionStock > git commit -m 'first commit' (enregistrer les fichiers)
+       a-4 clientGestionStock > git push origin master (nom du depot distant origin,dans la branche master)
+
+    
+

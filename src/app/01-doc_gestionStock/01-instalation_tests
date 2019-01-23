@@ -1,0 +1,10 @@
+-------------------- creation du projet -----------------------------------------
+>ng new clientGestionStockProduits
+--------------------- tests ---------------------------------------------------
+1- tests unitaire :
+    clientGestionStockProduits > npm test
+    - cette commande permet d'executer les tests unitaires cree Jasmine et execute par runner Karma
+2- tests fonctionnels appele aussi end to end e2e :
+    clientGestionStockProduits > npm run e2e
+    - cette commande permet d'executer les tests e2e cree Jasmine et execute par protractror lui aussi
+      utilise selenium.
